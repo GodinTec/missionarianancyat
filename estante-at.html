@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estante — Missionária Nancy: Antigo Testamento</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #1a1a2e;
+    background-image:
+      radial-gradient(ellipse at 50% 0, #2a1a3e 0%, #0f0a1a 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #c9a87e;
+    font-size: 2.2em;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,.5);
+  }
+  .subtitle {
+    text-align: center;
+    color: #8b6b4a;
+    font-size: .95em;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+  .shelf {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 24px;
+    padding: 0 10px;
+  }
+  .book {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .25s ease, box-shadow .25s ease;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  .book:hover {
+    transform: translateY(-6px);
+  }
+  .book:active {
+    transform: translateY(-2px);
+  }
+  .cover {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow:
+      0 4px 12px rgba(0,0,0,.6),
+      0 1px 3px rgba(0,0,0,.4),
+      inset 0 0 0 1px rgba(255,255,255,.06);
+    transition: box-shadow .25s ease;
+    background: #0f0a1a;
+  }
+  .book:hover .cover {
+    box-shadow:
+      0 8px 24px rgba(0,0,0,.7),
+      0 2px 6px rgba(0,0,0,.5),
+      inset 0 0 0 1px rgba(212,165,116,.15);
+  }
+  .label {
+    margin-top: 10px;
+    color: #c9a87e;
+    font-size: .78em;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: .5px;
+  }
+  .label small {
+    display: block;
+    color: #7a5f42;
+    font-size: .85em;
+    margin-top: 2px;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #5a432e;
+    font-size: .8em;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 600px) {
+    .shelf { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 16px; }
+    h1 { font-size: 1.5em; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Missionária Nancy</h1>
+<p class="subtitle">39 estudos bíblicos &middot; Antigo Testamento</p>
+
+<div class="shelf">
+
+<a class="book" href="01-genesis/o-principio.html">
+  <img class="cover" src="01-genesis/imagens/capa.jpg" alt="Gênesis">
+  <span class="label">Gênesis<small>O Princípio</small></span>
+</a>
+
+<a class="book" href="02-exodo/o-deus-que-liberta.html">
+  <img class="cover" src="02-exodo/imagens/capa.jpg" alt="Êxodo">
+  <span class="label">Êxodo<small>O Deus que Liberta</small></span>
+</a>
+
+<a class="book" href="03-levitico/chamados-a-santidade.html">
+  <img class="cover" src="03-levitico/imagens/capa.jpg" alt="Levítico">
+  <span class="label">Levítico<small>Chamados à Santidade</small></span>
+</a>
+
+<a class="book" href="04-numeros/jornada-de-fe.html">
+  <img class="cover" src="04-numeros/imagens/capa.jpg" alt="Números">
+  <span class="label">Números<small>Jornada de Fé</small></span>
+</a>
+
+<a class="book" href="05-deuteronomio/ouve-israel.html">
+  <img class="cover" src="05-deuteronomio/imagens/capa.jpg" alt="Deuteronômio">
+  <span class="label">Deuteronômio<small>Ouve, Israel</small></span>
+</a>
+
+<a class="book" href="06-josue/toma-posse.html">
+  <img class="cover" src="06-josue/imagens/capa.jpg" alt="Josué">
+  <span class="label">Josué<small>Toma Posse</small></span>
+</a>
+
+<a class="book" href="07-juizes/fidelidade-e-queda.html">
+  <img class="cover" src="07-juizes/imagens/capa.jpg" alt="Juízes">
+  <span class="label">Juízes<small>Fidelidade e Queda</small></span>
+</a>
+
+<a class="book" href="08-rute/laco-de-redencao.html">
+  <img class="cover" src="08-rute/imagens/capa.jpg" alt="Rute">
+  <span class="label">Rute<small>Laço de Redenção</small></span>
+</a>
+
+<a class="book" href="09-1-samuel/o-coracao-que-deus-ve.html">
+  <img class="cover" src="09-1-samuel/imagens/capa.jpg" alt="1 Samuel">
+  <span class="label">1 Samuel<small>O Coração que Deus Vê</small></span>
+</a>
+
+<a class="book" href="10-2-samuel/trono-e-pecado.html">
+  <img class="cover" src="10-2-samuel/imagens/capa.jpg" alt="2 Samuel">
+  <span class="label">2 Samuel<small>Trono e Pecado</small></span>
+</a>
+
+<a class="book" href="11-1-reis/gloria-e-divisao.html">
+  <img class="cover" src="11-1-reis/imagens/capa.jpg" alt="1 Reis">
+  <span class="label">1 Reis<small>Glória e Divisão</small></span>
+</a>
+
+<a class="book" href="12-2-reis/fogo-e-exilio.html">
+  <img class="cover" src="12-2-reis/imagens/capa.jpg" alt="2 Reis">
+  <span class="label">2 Reis<small>Fogo e Exílio</small></span>
+</a>
+
+<a class="book" href="13-1-cronicas/a-alianca-de-davi.html">
+  <img class="cover" src="13-1-cronicas/imagens/capa.jpg" alt="1 Crônicas">
+  <span class="label">1 Crônicas<small>A Aliança de Davi</small></span>
+</a>
+
+<a class="book" href="14-2-cronicas/aviva-senhor.html">
+  <img class="cover" src="14-2-cronicas/imagens/capa.jpg" alt="2 Crônicas">
+  <span class="label">2 Crônicas<small>Aviva, Senhor</small></span>
+</a>
+
+<a class="book" href="15-esdras/de-volta-para-casa.html">
+  <img class="cover" src="15-esdras/imagens/capa.jpg" alt="Esdras">
+  <span class="label">Esdras<small>De Volta para Casa</small></span>
+</a>
+
+<a class="book" href="16-neemias/levanta-te-e-edifica.html">
+  <img class="cover" src="16-neemias/imagens/capa.jpg" alt="Neemias">
+  <span class="label">Neemias<small>Levanta-te e Edifica</small></span>
+</a>
+
+<a class="book" href="17-ester/para-tal-momento.html">
+  <img class="cover" src="17-ester/imagens/capa.jpg" alt="Ester">
+  <span class="label">Ester<small>Para Tal Momento</small></span>
+</a>
+
+<a class="book" href="18-jo/meu-redentor-vive.html">
+  <img class="cover" src="18-jo/imagens/capa.jpg" alt="Jó">
+  <span class="label">Jó<small>Meu Redentor Vive</small></span>
+</a>
+
+<a class="book" href="19-salmos/louvor-em-todas-as-estacoes.html">
+  <img class="cover" src="19-salmos/imagens/capa.jpg" alt="Salmos">
+  <span class="label">Salmos<small>Louvor em Todas as Estações</small></span>
+</a>
+
+<a class="book" href="20-proverbios/o-temor-do-senhor.html">
+  <img class="cover" src="20-proverbios/imagens/capa.jpg" alt="Provérbios">
+  <span class="label">Provérbios<small>O Temor do Senhor</small></span>
+</a>
+
+<a class="book" href="21-eclesiastes/debaixo-do-sol.html">
+  <img class="cover" src="21-eclesiastes/imagens/capa.jpg" alt="Eclesiastes">
+  <span class="label">Eclesiastes<small>Debaixo do Sol</small></span>
+</a>
+
+<a class="book" href="22-cantares/o-amor-que-tudo-vence.html">
+  <img class="cover" src="22-cantares/imagens/capa.jpg" alt="Cantares">
+  <span class="label">Cantares<small>O Amor que Tudo Vence</small></span>
+</a>
+
+<a class="book" href="23-isaias/eis-o-cordeiro.html">
+  <img class="cover" src="23-isaias/imagens/capa.jpg" alt="Isaías">
+  <span class="label">Isaías<small>Eis o Cordeiro</small></span>
+</a>
+
+<a class="book" href="24-jeremias/nova-alianca.html">
+  <img class="cover" src="24-jeremias/imagens/capa.jpg" alt="Jeremias">
+  <span class="label">Jeremias<small>Nova Aliança</small></span>
+</a>
+
+<a class="book" href="25-lamentacoes/renascer-das-cinzas.html">
+  <img class="cover" src="25-lamentacoes/imagens/capa.jpg" alt="Lamentações">
+  <span class="label">Lamentações<small>Renascer das Cinzas</small></span>
+</a>
+
+<a class="book" href="26-ezequiel/vale-de-ossos-secos.html">
+  <img class="cover" src="26-ezequiel/imagens/capa.jpg" alt="Ezequiel">
+  <span class="label">Ezequiel<small>Vale de Ossos Secos</small></span>
+</a>
+
+<a class="book" href="27-daniel/o-reino-eterno.html">
+  <img class="cover" src="27-daniel/imagens/capa.jpg" alt="Daniel">
+  <span class="label">Daniel<small>O Reino Eterno</small></span>
+</a>
+
+<a class="book" href="28-oseias/amor-incondicional.html">
+  <img class="cover" src="28-oseias/imagens/capa.jpg" alt="Oseias">
+  <span class="label">Oseias<small>Amor Incondicional</small></span>
+</a>
+
+<a class="book" href="29-joel/derramarei-do-meu-espirito.html">
+  <img class="cover" src="29-joel/imagens/capa.jpg" alt="Joel">
+  <span class="label">Joel<small>Derramarei do Meu Espírito</small></span>
+</a>
+
+<a class="book" href="30-amos/corra-a-justica.html">
+  <img class="cover" src="30-amos/imagens/capa.jpg" alt="Amós">
+  <span class="label">Amós<small>Corra a Justiça</small></span>
+</a>
+
+<a class="book" href="31-obadias/a-queda-do-altivo.html">
+  <img class="cover" src="31-obadias/imagens/capa.jpg" alt="Obadias">
+  <span class="label">Obadias<small>A Queda do Altivo</small></span>
+</a>
+
+<a class="book" href="32-jonas/misericordia-para-todos.html">
+  <img class="cover" src="32-jonas/imagens/capa.jpg" alt="Jonas">
+  <span class="label">Jonas<small>Misericórdia para Todos</small></span>
+</a>
+
+<a class="book" href="33-miqueias/o-que-o-senhor-pede.html">
+  <img class="cover" src="33-miqueias/imagens/capa.jpg" alt="Miqueias">
+  <span class="label">Miqueias<small>O que o Senhor Pede</small></span>
+</a>
+
+<a class="book" href="34-naum/vinganca-e-refugio.html">
+  <img class="cover" src="34-naum/imagens/capa.jpg" alt="Naum">
+  <span class="label">Naum<small>Vingança e Refúgio</small></span>
+</a>
+
+<a class="book" href="35-habacuque/o-justo-vivera-pela-fe.html">
+  <img class="cover" src="35-habacuque/imagens/capa.jpg" alt="Habacuque">
+  <span class="label">Habacuque<small>O Justo Viverá pela Fé</small></span>
+</a>
+
+<a class="book" href="36-sofonias/o-grande-dia.html">
+  <img class="cover" src="36-sofonias/imagens/capa.jpg" alt="Sofonias">
+  <span class="label">Sofonias<small>O Grande Dia</small></span>
+</a>
+
+<a class="book" href="37-ageu/considerai-vossos-caminhos.html">
+  <img class="cover" src="37-ageu/imagens/capa.jpg" alt="Ageu">
+  <span class="label">Ageu<small>Considerai os Vossos Caminhos</small></span>
+</a>
+
+<a class="book" href="38-zacarias/olhai-para-mim.html">
+  <img class="cover" src="38-zacarias/imagens/capa.jpg" alt="Zacarias">
+  <span class="label">Zacarias<small>Olhai para Mim</small></span>
+</a>
+
+<a class="book" href="39-malaquias/eis-que-envio-meu-mensageiro.html">
+  <img class="cover" src="39-malaquias/imagens/capa.jpg" alt="Malaquias">
+  <span class="label">Malaquias<small>Eis que Envio Meu Mensageiro</small></span>
+</a>
+
+</div>
+
+<p class="footer">Coleção Antigo Testamento &middot; 39 ebooks</p>
+
+</body>
+</html>
